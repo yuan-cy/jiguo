@@ -90,4 +90,23 @@ $(function() {
         };
         timer = setInterval(auto, 1000);
     })();
+    //隐藏动画
+    var num_ =0;
+    $('.jg').click(function(){
+        num_++;
+        console.log(num_);
+        if(num_==6){
+            $('.h_').slideDown();
+        }
+        // if(num_ ==7){
+        //     num_ =0;
+        // }
+
+    });
+   
+        $('.clear').click(function(){
+            console.log(1111)
+            $(this).parent('.h_').slideUp();
+        });
+    
 })

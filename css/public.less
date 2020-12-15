@@ -353,3 +353,76 @@ footer {
 #sh:hover{
     background-color: rgb(71, 70, 70);
 }
+/* 隐藏动画 */
+.h_{
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    border-radius: 10px;
+    box-shadow: 3px 7px 2px #ccc;
+    background-color: #ccc;
+    .bg1,.bg2{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 300px;
+        animation: bgMove 5s linear infinite;
+    }
+    .bg1{
+        background: url('../image/bg1.png') repeat-x;
+    }
+    .bg2{
+        background: url('../image/bg2.png') repeat-x;
+    }
+    .bear{
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 200px;
+        height: 100px;
+        background: url('../image/bear.png');
+        animation: run  .5s steps(8) infinite ,t 1s linear forwards;
+    }
+    .clear{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding: 5px;
+        color: #fff;
+        cursor: pointer;
+    }
+   
+}
+@keyframes bgMove{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -3840px 0;
+      
+    }
+}
+@keyframes run{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -1600px 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+@keyframes t{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
