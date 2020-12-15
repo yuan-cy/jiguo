@@ -1,0 +1,152 @@
+// 封装
+
+.bk(@b){
+    background-color: @b;
+}
+.bd(){
+    border: 1px solid black;
+}
+*{
+    box-sizing: border-box;
+}
+.div{
+    width: 100%;
+
+    .bk(#F7F7F7);
+    .main{
+        width: 1000px;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        .aside-top-p{
+            color: #999999;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        aside{
+            width: 690px;
+            height: auto;
+            float: left;
+            
+            .aside-title{
+                width: 100%;
+                height: 125px;
+                padding: 25px;
+                .bk(white);
+                margin-bottom: 1px;
+                border-radius: 10px 10px 0 0;
+                p{
+                    padding-left: 15px;
+                    height: 30px;
+                    line-height: 30px;
+                    position: relative;
+                    color: #cccccc;
+                    margin-top: 10px;
+                    img{
+                        position: absolute;
+                        top: 3px;
+                        left: 0;
+                        margin-right: 3px;
+                    }
+                    span{
+                        float: right;
+                    }
+                }
+            }
+            .aside-main{
+                width: 100%;
+                height: auto;
+                .bk(white);
+                padding: 15px 25px;
+                p{
+                    margin: 15px 1px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #332330;
+                }
+                h3{
+                    text-align: center;
+                    font-weight: 500;
+                }
+                .mar{
+                    margin: 6px 0;
+                }
+                .a{
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    b{
+                        color: #ABABAA;
+                        font-size: 12px;
+                        cursor: pointer;
+                        font-weight: 400;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        article{
+            width: 250px;
+            height: 100px;
+            float: right;
+           
+            .article{
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                .bk(white);
+                .left{
+                    width: 125px;
+                    height: 100px;
+                    float: left;
+                    padding: 25px;
+                    text-align: center;
+                    border-right: 1px solid #cccccc;
+                    .left-img{
+                        display: block;
+                        cursor: pointer;
+                    }
+                    .left-img1{
+                        display: none;
+                        cursor: pointer;
+                    }
+                    p{
+                        margin-top: 2px;
+                        text-align: center;
+                        cursor: default;
+                    }
+                }
+                .right{
+                    width: 125px;
+                    height: 100px;
+                    float: left;
+                    padding: 27px;
+                    text-align: center;
+                    .right-img{
+                        display: block;
+                        cursor: pointer;
+                    }
+                    .right-img1{
+                        display: none;
+                        cursor: pointer;
+                        position: relative;
+                        .bshare-custom{
+                            width: 50px;
+                            position: absolute;
+                            top: -22px;
+                            left: 15px;
+                        }
+                    }
+                    
+                    p{
+                        margin-top: 3px;
+                        text-align: center;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+        
+    }
+}

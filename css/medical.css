@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #F7F7F7;
+}
+.medical {
+  width: 100%;
+  height: 170px;
+  background-color: white;
+  text-align: center;
+  margin-top: 0;
+}
+.medical h1 {
+  padding-top: 50px;
+  padding-bottom: 6px;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.medical .title {
+  margin: 0 auto;
+  width: 330px;
+  height: 50px;
+  overflow: hidden;
+}
+.medical .title .bot1,
+.medical .title .bot2 {
+  float: left;
+  width: 165px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #999999;
+  cursor: pointer;
+}
+.bdb {
+  border-bottom: 5px solid red;
+}
+.bot1-main,
+.bot2-main {
+  width: 1000px;
+  height: auto;
+  margin: 30px auto;
+  overflow: hidden;
+  display: none;
+}
+.bot1-main .main-left,
+.bot2-main .main-left {
+  float: left;
+  width: 640px;
+  height: auto;
+}
+.bot1-main .main-left div:nth-of-type(2n-1),
+.bot2-main .main-left div:nth-of-type(2n-1) {
+  width: 640px;
+  height: 377px;
+  border-radius: 15px;
+  background-size: 640px 377px;
+  position: relative;
+}
+.bot1-main .main-left div:nth-of-type(2n-1) .mask,
+.bot2-main .main-left div:nth-of-type(2n-1) .mask {
+  position: absolute;
+  bottom: 0;
+  display: none;
+  width: 640px;
+  height: 120px;
+  padding: 25px;
+  border-radius: 0 0 15px 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.bot1-main .main-left div:nth-of-type(2n-1) .mask p:first-of-type,
+.bot2-main .main-left div:nth-of-type(2n-1) .mask p:first-of-type {
+  font-size: 14px;
+  color: #694F6D;
+  margin-bottom: 20px;
+}
+.bot1-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type,
+.bot2-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type {
+  color: #999999;
+  font-size: 13px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.bot1-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type .span1,
+.bot2-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type .span1 {
+  display: block;
+  float: left;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+.bot1-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type .span2,
+.bot2-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type .span2 {
+  margin-left: 15px;
+  color: red;
+  float: left;
+}
+.bot1-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type .span3,
+.bot2-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type .span3 {
+  margin-left: 15px;
+}
+.bot1-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type .span4,
+.bot2-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type .span4 {
+  float: right;
+}
+.bot1-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type .span4 span,
+.bot2-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type .span4 span {
+  width: 12px;
+  height: 12px;
+  float: left;
+  cursor: pointer;
+  display: block;
+  line-height: 12px;
+  margin-right: 2px;
+}
+.bot1-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type .span4 .zan,
+.bot2-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type .span4 .zan {
+  background: url(../img/zan.png);
+}
+.bot1-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type .span4 .zan1,
+.bot2-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type .span4 .zan1 {
+  background: url(../img/zan_1.png);
+}
+.bot1-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type .span4 .comments,
+.bot2-main .main-left div:nth-of-type(2n-1) .mask p:last-of-type .span4 .comments {
+  background: url(../img/reply.png);
+}
+.bot1-main .main-left .loading,
+.bot2-main .main-left .loading {
+  width: 640px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: default;
+}
+.bot1-main .main-left .loading p > span,
+.bot2-main .main-left .loading p > span {
+  cursor: pointer;
+}
+.bot1-main .main-left .div-1,
+.bot2-main .main-left .div-1 {
+  background: url(../img/bg1.jpg);
+}
+.bot1-main .main-left .div-2,
+.bot2-main .main-left .div-2 {
+  background: url(../img/bg2.jpg);
+}
+.bot1-main .main-left .div-3,
+.bot2-main .main-left .div-3 {
+  background: url(../img/bg3.jpg);
+}
+.bot1-main .main-left .div-4,
+.bot2-main .main-left .div-4 {
+  background: url(../img/bg4.jpg);
+}
+.bot1-main .main-left .div-5,
+.bot2-main .main-left .div-5 {
+  background: url(../img/bg5.jpg);
+}
+.bot1-main .main-right,
+.bot2-main .main-right {
+  width: 270px;
+  height: auto;
+  margin-left: 30px;
+  float: left;
+}
+.bot1-main .main-right .main-right-title,
+.bot2-main .main-right .main-right-title {
+  border-left: 5px solid red;
+  width: 100%;
+  height: 25px;
+  padding-left: 15px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 17px;
+}
+.bot1-main .main-right .main-right-img,
+.bot2-main .main-right .main-right-img {
+  margin: 20px 0;
+  width: 270px;
+  height: 165px;
+  background: url(../img/tiyanImg.jpg);
+}
+.bot1-main .main-right h3,
+.bot2-main .main-right h3,
+.bot1-main .main-right p,
+.bot2-main .main-right p {
+  margin-bottom: 15px;
+}
+.bot1-main .main-right .Focus-on,
+.bot2-main .main-right .Focus-on {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  border-left: 5px solid red;
+  width: 100%;
+  height: 25px;
+  padding-left: 15px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 17px;
+}
+.bot1-main .main-right .code,
+.bot2-main .main-right .code {
+  width: 270px;
+  height: 120px;
+  background: url(../img/myCode.jpg);
+  background-size: 270px 120px;
+  border-radius: 10px;
+}
+.bot2-main {
+  display: none;
+}
+.bot2-main .main-left .div-1 {
+  background: url(../img/bg8.jpg);
+}
+.bot2-main .main-left .div-2 {
+  background: url(../img/bg7.jpg);
+}
+.bot2-main .main-left .div-3 {
+  background: url(../img/bg6.jpg);
+}
+.bot2-main .main-left .div-4 {
+  background: url(../img/bg5.jpg);
+}
+.bot2-main .main-left .div-5 {
+  background: url(../img/bg4.jpg);
+}
+.bot1-main {
+  display: block;
+}
