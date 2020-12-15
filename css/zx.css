@@ -1,0 +1,506 @@
+header {
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 1px 3px #ccc;
+}
+.box {
+  width: 1000px;
+  height: 75px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.box .jg {
+  height: 52px;
+  width: 133px;
+  float: left;
+  margin-top: 10px;
+}
+.box .ul_ {
+  overflow: hidden;
+  margin-top: 30px;
+  float: left;
+}
+.box .ul_ li:nth-child(1) {
+  margin-left: 67px;
+}
+.box .ul_ li {
+  float: left;
+  margin-right: 50px;
+}
+.box .ul_ li > a {
+  font-size: 14px;
+  color: #000;
+}
+.box .rig {
+  float: right;
+  overflow: hidden;
+  margin-top: 25px;
+}
+.box .rig div {
+  float: left;
+}
+.box .rig .fdj {
+  width: 20px;
+  height: 20px;
+}
+.box .rig .ims {
+  margin-right: 10px;
+}
+.box .rig .bumit:hover {
+  cursor: default;
+}
+.box .rig .bumit {
+  width: 35px;
+  height: 20px;
+  border: 1px solid red;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.box .rig .bumit a {
+  font-family: "微软雅黑", Arail, Tabhoma;
+}
+.box .rig .zc {
+  width: 35px;
+  height: 20px;
+  border: 1px solid red;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 5px;
+}
+.box .rig .zc a {
+  color: #fe5341;
+}
+.ku {
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.ul_l {
+  width: 392px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.ul_l li {
+  float: left;
+  margin-left: 63px;
+  font-size: 16px;
+  color: #a9abaa;
+  width: 50px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.ul_l li a {
+  color: #000;
+}
+.ul_l .list {
+  border-bottom: 2px solid red;
+}
+.all_list {
+  background: #f3f3f3;
+}
+.all_list #list {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.all_list #list li {
+  width: 210px;
+  height: 260px;
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+}
+.all_list #list li img {
+  width: 210px;
+  height: 150px;
+  border-radius: 5px;
+}
+.all_list #list li h4 {
+  text-align: center;
+}
+.all_list #list li div:nth-child(3) {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  color: red;
+}
+.all_list #list li div:nth-child(4) {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.all_list #list li div:nth-child(4) span:nth-child(1) {
+  background: url(../bgimgs/xin.png) no-repeat center center;
+  padding-left: 20px;
+}
+.all_list #list li div:nth-child(4) span:nth-child(2) {
+  background: url(../bgimgs/reply.png) no-repeat center center;
+  padding-left: 20px;
+}
+.all_list #list li:nth-child(4),
+.all_list #list li:nth-child(8) {
+  float: right;
+}
+.all_list #list li:nth-child(2),
+.all_list #list li:nth-child(6) {
+  margin-left: 48px;
+  margin-right: 53px;
+}
+.all_list #list li:nth-child(1),
+.all_list #list li:nth-child(2),
+.all_list #list :nth-child(3),
+.all_list #list :nth-child(4) {
+  margin-bottom: 20px;
+}
+.all_list #list li:nth-child(12),
+.all_list #list li:nth-child(16) {
+  float: right;
+}
+.all_list #list li:nth-child(10),
+.all_list #list li:nth-child(14) {
+  margin-left: 48px;
+  margin-right: 53px;
+}
+.all_list #list li:nth-child(9),
+.all_list #list li:nth-child(10),
+.all_list #list :nth-child(11),
+.all_list #list :nth-child(12) {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.all_list .load {
+  width: 100px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: red;
+  padding-left: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background: url(../bgimgs/more.png) no-repeat 0px 7px;
+  cursor: pointer;
+}
+.all_list .load2 {
+  width: 100px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: red;
+  padding-left: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background: url(../bgimgs/loading-icon.gif) no-repeat;
+}
+.all_list1 {
+  background: #f3f3f3;
+}
+.all_list1 #list2 {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.all_list1 #list2 li {
+  width: 210px;
+  height: 260px;
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+}
+.all_list1 #list2 li img {
+  width: 210px;
+  height: 150px;
+  border-radius: 5px;
+}
+.all_list1 #list2 li h4 {
+  text-align: center;
+}
+.all_list1 #list2 li div:nth-child(3) {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  color: red;
+}
+.all_list1 #list2 li div:nth-child(4) {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.all_list1 #list2 li div:nth-child(4) span:nth-child(1) {
+  background: url(../bgimgs/xin.png) no-repeat center center;
+  padding-left: 20px;
+}
+.all_list1 #list2 li div:nth-child(4) span:nth-child(2) {
+  background: url(../bgimgs/reply.png) no-repeat center center;
+  padding-left: 20px;
+}
+.all_list1 #list2 li:nth-child(4),
+.all_list1 #list2 li:nth-child(8) {
+  float: right;
+}
+.all_list1 #list2 li:nth-child(2),
+.all_list1 #list2 li:nth-child(6) {
+  margin-left: 48px;
+  margin-right: 53px;
+}
+.all_list1 #list2 li:nth-child(1),
+.all_list1 #list2 li:nth-child(2),
+.all_list1 #list2 :nth-child(3),
+.all_list1 #list2 :nth-child(4) {
+  margin-bottom: 20px;
+}
+.all_list1 #list2 li:nth-child(12),
+.all_list1 #list2 li:nth-child(16) {
+  float: right;
+}
+.all_list1 #list2 li:nth-child(10),
+.all_list1 #list2 li:nth-child(14) {
+  margin-left: 48px;
+  margin-right: 53px;
+}
+.all_list1 #list2 li:nth-child(9),
+.all_list1 #list2 li:nth-child(10),
+.all_list1 #list2 :nth-child(11),
+.all_list1 #list2 :nth-child(12) {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.all_list1 .load {
+  width: 100px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: red;
+  padding-left: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background: url(../bgimgs/more.png) no-repeat 0px 7px;
+  cursor: pointer;
+}
+.all_list1 .load2 {
+  width: 100px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: red;
+  padding-left: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background: url(../bgimgs/loading-icon.gif) no-repeat;
+}
+.ul_u {
+  width: 100%;
+  background-color: #f7f7f7;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+.ul_u .lil {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.ul_u #ul_l {
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+.ul_u #ul_l .bode {
+  padding-left: 10px;
+  border-left: 3px solid red;
+}
+.ul_u #ul_l > img {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.ul_u #ul_l > img:hover {
+  animation: imgs 1s;
+}
+.ul_u #ul_l .font-zi > span {
+  font-size: 14px;
+  color: #ccc;
+  margin-left: 50px;
+}
+.ul_u #ul_l .zz {
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #ccc;
+}
+.ul_u #ul_l .zz > span {
+  margin-left: 60px;
+}
+.ul_u #ul_l .p1 > span {
+  color: #ccc;
+  margin-left: 38px;
+}
+.ul_u #ul_l .p2 > span {
+  color: #ccc;
+  margin-left: 27px;
+}
+.ul_u #ul_l .p3 > span {
+  color: #ccc;
+  margin-left: 30px;
+}
+.ul_u #ul_l p {
+  margin-top: 10px;
+}
+@keyframes imgs {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+footer {
+  background-color: #505050;
+  height: 360px;
+}
+footer .foot {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+footer .foot > img {
+  margin-top: 40px;
+  float: left;
+}
+footer .foot > div:nth-child(2) {
+  margin-left: 21px;
+  margin-top: 40px;
+  float: left;
+  overflow: hidden;
+  width: 130px;
+}
+footer .foot > div:nth-child(2) img {
+  float: left;
+}
+footer .foot > div:nth-child(2) p {
+  float: left;
+  font-size: 14px;
+}
+footer .foot > div:nth-child(2) p a {
+  color: grey;
+}
+footer .foot > div:nth-child(2) :nth-child(2) {
+  margin-top: 30px;
+}
+footer .foot > div:nth-child(2) :nth-child(3) {
+  margin-top: 29px;
+}
+footer .foot > div:nth-child(2) p > a:hover {
+  color: red;
+}
+footer .foot > div:nth-child(3) {
+  width: 99px;
+  float: left;
+  margin-top: 40px;
+  margin-left: 25px;
+}
+footer .foot > div:nth-child(3) h2 a {
+  font-weight: 500;
+  color: #fff;
+}
+footer .foot > div:nth-child(3) a {
+  color: grey;
+}
+footer .foot > div:nth-child(3) p:nth-child(2) {
+  margin-top: 30px;
+}
+footer .foot > div:nth-child(3) p {
+  font-size: 14px;
+}
+footer .foot > div:nth-child(4) {
+  width: 138px;
+  float: left;
+  margin-top: 40px;
+  margin-left: 25px;
+  overflow: hidden;
+}
+footer .foot > div:nth-child(4) h2 a {
+  font-weight: 500;
+  color: #fff;
+}
+footer .foot > div:nth-child(4) a {
+  color: grey;
+}
+footer .foot > div:nth-child(4) p {
+  font-size: 14px;
+}
+footer .foot > div:nth-child(4) div:nth-child(2) {
+  margin-top: 30px;
+  float: left;
+}
+footer .foot > div:nth-child(4) div:nth-child(3) {
+  margin-top: 30px;
+  float: left;
+  margin-left: 12px;
+}
+footer .foot > div:nth-child(5) {
+  width: 140px;
+  float: left;
+  margin-top: 40px;
+  margin-left: 25px;
+}
+footer .foot > div:nth-child(5) h2 a {
+  font-weight: 500;
+  color: #fff;
+}
+footer .foot > div:nth-child(5) a {
+  color: grey;
+}
+footer .foot > div:nth-child(5) p:nth-child(2) {
+  margin-top: 30px;
+}
+footer .foot > div:nth-child(5) p {
+  font-size: 14px;
+}
+footer .foot > div:nth-child(6) {
+  width: 181px;
+  float: right;
+  margin-top: 40px;
+}
+footer .foot > div:nth-child(6) h2 a {
+  font-weight: 500;
+  color: #fff;
+}
+footer .foot > div:nth-child(6) a {
+  color: grey;
+}
+footer .foot > div:nth-child(6) p:nth-child(2) {
+  margin-top: 30px;
+}
+footer .foot > div:nth-child(6) p {
+  font-size: 14px;
+}
+footer .foot p:hover a {
+  color: red;
+}
+footer .shang {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 10px;
+  text-align: center;
+}
+footer .shang #sh:hover {
+  background-color: grey;
+}
+footer .shang > div:nth-child(1) {
+  float: right;
+  width: 50px;
+  height: 52px;
+  background: #e8e8e8;
+  position: relative;
+  border-radius: 7px;
+}
+footer .shang > div:nth-child(1) img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer .shang > div:nth-child(2) {
+  margin-top: 70px;
+  color: grey;
+}
