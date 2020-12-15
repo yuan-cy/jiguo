@@ -7,7 +7,113 @@
     height: @h;
     
 }
+/* 背景图 */
+.image-bg {
+    width: 100%;
+    height: 300px;
+    background: url('../bgimgs/original.jpg')no-repeat;
+    background-size: 100% 100%;
 
+    .image-c {
+        width: 1000px;
+        height: 300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .count {
+            width: 279px;
+            animation: don 1s linear forwards;
+
+            .sound {
+                font-size: 30px;
+                color: #fff;
+            }
+
+            .spa {
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 5px;
+                margin-top: 25px;
+
+                span {
+                    color: #fff;
+                    font-size: 16px;
+                    background: rgba(255, 255, 255, .3);
+                    text-align: center;
+                    line-height: 25px;
+                    margin-right: 15px;
+                    padding: 2px;
+                }
+            }
+
+            .sj {
+                margin-top: 25px;
+                margin-left: 35px;
+                font-size: 14px;
+                color: #fff;
+            }
+
+            .but {
+                width: 220px;
+                height: 50px;
+                background-color: red;
+                font-size: 20px;
+                color: #fff;
+                outline: none;
+                border: none;
+                border-radius: 7px;
+                margin-top: 25px;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+@keyframes don {
+    0% {
+        transform: scale(.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+nav{
+    .wh(100%,100px);
+    background-color: #F0F0F0;
+    .nav-box{
+        .wh(1000px,65px);
+        margin: 0 auto;
+        padding: 18px 0;
+        ul{
+            li:first-of-type{
+                .wh(70px,64px);
+                margin-right: 60px;
+                line-height: 32px;
+                text-align: center;
+                font-size: 23px;
+                font-weight: 400;
+                color: black;
+                border-left: 6px solid red
+            }
+            .bdb{
+                border-bottom: 2px solid red;
+            }
+            li{
+                .wh(50px,64px);
+                margin-right: 124px;
+                float: left;
+                text-align: center;
+                color: #AAAAAA;
+            }
+        }
+    }
+}
 main{
     .wh(1000px, auto);
     margin: 25px auto;

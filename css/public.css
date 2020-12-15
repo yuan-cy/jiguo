@@ -1,223 +1,278 @@
 header {
-  border-bottom: 1px solid #ccc;
-  box-shadow: 0px 1px 3px #ccc;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px 1px 3px #ccc;
 }
+
 .box {
-  width: 1000px;
-  height: 75px;
-  margin: 0 auto;
-  overflow: hidden;
+    width: 1000px;
+    height: 75px;
+    margin: 0 auto;
+    overflow: hidden;
 }
+
 .box .jg {
-  height: 52px;
-  width: 133px;
-  float: left;
-  margin-top: 10px;
+    height: 52px;
+    width: 133px;
+    float: left;
+    margin-top: 10px;
 }
+
 .box .ul_ {
-  overflow: hidden;
-  margin-top: 30px;
-  float: left;
+    overflow: hidden;
+    margin-top: 30px;
+    float: left;
 }
+
 .box .ul_ li:nth-child(1) {
-  margin-left: 67px;
+    margin-left: 67px;
 }
+
 .box .ul_ li {
-  float: left;
-  margin-right: 50px;
+    float: left;
+    margin-right: 50px;
 }
-.box .ul_ li > a {
-  font-size: 14px;
-  color: #000;
+
+.box .ul_ li .red {
+    color: red;
 }
+
+.box .ul_ li>a {
+    font-size: 14px;
+    color: #000;
+}
+
 .box .rig {
-  float: right;
-  overflow: hidden;
-  margin-top: 25px;
+    float: right;
+    overflow: hidden;
+    margin-top: 25px;
 }
+
 .box .rig div {
-  float: left;
+    float: left;
 }
+
 .box .rig .fdj {
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
 }
+
 .box .rig .ims {
-  margin-right: 10px;
+    margin-right: 10px;
 }
+
 .box .rig .bumit:hover {
-  cursor: default;
+    cursor: default;
 }
+
 .box .rig .bumit {
-  width: 35px;
-  height: 20px;
-  border: 1px solid red;
-  text-align: center;
-  line-height: 20px;
-  margin-right: 10px;
-  border-radius: 5px;
+    width: 35px;
+    height: 20px;
+    border: 1px solid red;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
 }
+
 .box .rig .bumit a {
-  font-family: "微软雅黑", Arail, Tabhoma;
+    font-family: "微软雅黑", Arail, Tabhoma;
 }
+
 .box .rig .zc {
-  width: 35px;
-  height: 20px;
-  border: 1px solid red;
-  text-align: center;
-  line-height: 20px;
-  border-radius: 5px;
+    width: 35px;
+    height: 20px;
+    border: 1px solid red;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 5px;
 }
+
 .box .rig .zc a {
-  color: #fe5341;
+    color: #fe5341;
 }
+
 footer {
-  background-color: #505050;
-  height: 360px;
+    background-color: #505050;
+    height: 360px;
 }
+
 footer .foot {
-  width: 1000px;
-  margin: 0 auto;
-  overflow: hidden;
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
 }
-footer .foot > img {
-  margin-top: 40px;
-  float: left;
+
+footer .foot>img {
+    margin-top: 40px;
+    float: left;
 }
-footer .foot > div:nth-child(2) {
-  margin-left: 21px;
-  margin-top: 40px;
-  float: left;
-  overflow: hidden;
-  width: 130px;
+
+footer .foot>div:nth-child(2) {
+    margin-left: 21px;
+    margin-top: 40px;
+    float: left;
+    overflow: hidden;
+    width: 130px;
 }
-footer .foot > div:nth-child(2) img {
-  float: left;
+
+footer .foot>div:nth-child(2) img {
+    float: left;
 }
-footer .foot > div:nth-child(2) p {
-  float: left;
-  font-size: 14px;
+
+footer .foot>div:nth-child(2) p {
+    float: left;
+    font-size: 14px;
 }
-footer .foot > div:nth-child(2) p a {
-  color: grey;
+
+footer .foot>div:nth-child(2) p a {
+    color: grey;
 }
-footer .foot > div:nth-child(2) :nth-child(2) {
-  margin-top: 30px;
+
+footer .foot>div:nth-child(2) :nth-child(2) {
+    margin-top: 30px;
 }
-footer .foot > div:nth-child(2) :nth-child(3) {
-  margin-top: 29px;
+
+footer .foot>div:nth-child(2) :nth-child(3) {
+    margin-top: 29px;
 }
-footer .foot > div:nth-child(2) p > a:hover {
-  color: red;
+
+footer .foot>div:nth-child(2) p>a:hover {
+    color: red;
 }
-footer .foot > div:nth-child(3) {
-  width: 99px;
-  float: left;
-  margin-top: 40px;
-  margin-left: 25px;
+
+footer .foot>div:nth-child(3) {
+    width: 99px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 25px;
 }
-footer .foot > div:nth-child(3) h2 a {
-  font-weight: 500;
-  color: #fff;
+
+footer .foot>div:nth-child(3) h2 a {
+    font-weight: 500;
+    color: #fff;
 }
-footer .foot > div:nth-child(3) a {
-  color: grey;
+
+footer .foot>div:nth-child(3) a {
+    color: grey;
 }
-footer .foot > div:nth-child(3) p:nth-child(2) {
-  margin-top: 30px;
+
+footer .foot>div:nth-child(3) p:nth-child(2) {
+    margin-top: 30px;
 }
-footer .foot > div:nth-child(3) p {
-  font-size: 14px;
+
+footer .foot>div:nth-child(3) p {
+    font-size: 14px;
 }
-footer .foot > div:nth-child(4) {
-  width: 138px;
-  float: left;
-  margin-top: 40px;
-  margin-left: 25px;
-  overflow: hidden;
+
+footer .foot>div:nth-child(4) {
+    width: 138px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 25px;
+    overflow: hidden;
 }
-footer .foot > div:nth-child(4) h2 a {
-  font-weight: 500;
-  color: #fff;
+
+footer .foot>div:nth-child(4) h2 a {
+    font-weight: 500;
+    color: #fff;
 }
-footer .foot > div:nth-child(4) a {
-  color: grey;
+
+footer .foot>div:nth-child(4) a {
+    color: grey;
 }
-footer .foot > div:nth-child(4) p {
-  font-size: 14px;
+
+footer .foot>div:nth-child(4) p {
+    font-size: 14px;
 }
-footer .foot > div:nth-child(4) div:nth-child(2) {
-  margin-top: 30px;
-  float: left;
+
+footer .foot>div:nth-child(4) div:nth-child(2) {
+    margin-top: 30px;
+    float: left;
 }
-footer .foot > div:nth-child(4) div:nth-child(3) {
-  margin-top: 30px;
-  float: left;
-  margin-left: 12px;
+
+footer .foot>div:nth-child(4) div:nth-child(3) {
+    margin-top: 30px;
+    float: left;
+    margin-left: 12px;
 }
-footer .foot > div:nth-child(5) {
-  width: 140px;
-  float: left;
-  margin-top: 40px;
-  margin-left: 25px;
+
+footer .foot>div:nth-child(5) {
+    width: 140px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 25px;
 }
-footer .foot > div:nth-child(5) h2 a {
-  font-weight: 500;
-  color: #fff;
+
+footer .foot>div:nth-child(5) h2 a {
+    font-weight: 500;
+    color: #fff;
 }
-footer .foot > div:nth-child(5) a {
-  color: grey;
+
+footer .foot>div:nth-child(5) a {
+    color: grey;
 }
-footer .foot > div:nth-child(5) p:nth-child(2) {
-  margin-top: 30px;
+
+footer .foot>div:nth-child(5) p:nth-child(2) {
+    margin-top: 30px;
 }
-footer .foot > div:nth-child(5) p {
-  font-size: 14px;
+
+footer .foot>div:nth-child(5) p {
+    font-size: 14px;
 }
-footer .foot > div:nth-child(6) {
-  width: 181px;
-  float: right;
-  margin-top: 40px;
+
+footer .foot>div:nth-child(6) {
+    width: 181px;
+    float: right;
+    margin-top: 40px;
 }
-footer .foot > div:nth-child(6) h2 a {
-  font-weight: 500;
-  color: #fff;
+
+footer .foot>div:nth-child(6) h2 a {
+    font-weight: 500;
+    color: #fff;
 }
-footer .foot > div:nth-child(6) a {
-  color: grey;
+
+footer .foot>div:nth-child(6) a {
+    color: grey;
 }
-footer .foot > div:nth-child(6) p:nth-child(2) {
-  margin-top: 30px;
+
+footer .foot>div:nth-child(6) p:nth-child(2) {
+    margin-top: 30px;
 }
-footer .foot > div:nth-child(6) p {
-  font-size: 14px;
+
+footer .foot>div:nth-child(6) p {
+    font-size: 14px;
 }
+
 footer .foot p:hover a {
-  color: red;
+    color: red;
 }
+
 footer .shang {
-  width: 1000px;
-  margin: 0 auto;
-  overflow: hidden;
-  margin-top: 10px;
-  text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 10px;
+    text-align: center;
 }
-footer .shang > div:nth-child(2) {
-  margin-top: 70px;
-  color: grey;
+
+footer .shang>div:nth-child(2) {
+    margin-top: 70px;
+    color: grey;
 }
+
 #sh {
-  position: fixed;
-  right: 100px;
-  bottom: 100px;
-  width: 50px;
-  height: 52px;
-  line-height: 52px;
-  text-align: center;
-  background: grey;
-  border-radius: 7px;
-  display: none;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    width: 50px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    background: grey;
+    border-radius: 7px;
+    display: none;
 }
+
 #sh:hover {
-  background-color: #474646;
+    background-color: #474646;
 }

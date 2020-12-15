@@ -18,11 +18,11 @@
     $('.right-img').click(function() {
         $(this).css('display', 'none')
         $(this).next('div').css('display', 'block')
-        $('.num').html(++num);
+
     })
     $('.right-img1').click(function() {
         $(this).css('display', 'none')
         $(this).prev('div').css('display', 'block')
-        $('.num').html(--num)
+
     })
 })()

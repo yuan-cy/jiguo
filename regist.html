@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>注册</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="./css/regist.css">
 </head>
+
 <body>
-     <!-- 导航栏 -->
-     <header>
+    <!-- 导航栏 -->
+    <header>
         <div class="box">
             <img src="./img/logonew.png" class="jg">
             <ul class="ul_">
-                <li><a href="">首页</a>
-                <li>
-                <li><a href="">酷玩</a>
-                <li>
-                <li><a href="">导购</a>
-                <li>
-                <li><a href="">试用</a>
-                <li>
-                <li><a href="">报告</a>
-                <li>
+                <li><a href="#" class="red">首页</a>
+                </li>
+                <li><a href="./play/zx.html">酷玩</a>
+                </li>
+                <li><a href="./guid/new.html">导购</a>
+                </li>
+                <li><a href="./use/forFree.html">试用</a>
+                </li>
+                <li><a href="./medical.html" class="red">报告</a>
+                </li>
             </ul>
             <div class="rig">
                 <div class="ims"><img src="./bgimgs/search.png" class="fdj"></div>
@@ -32,7 +34,44 @@
             </div>
         </div>
     </header>
+    <!-- 注册 -->
+    <div class="conter">
+        <div class="zc"><a href="#">注册极果</a> </div>
+        <form action="#" class="forms">
+            <div>
+                <input type="text" placeholder="请输入登录手机号" class="tel">
+                <span></span>
+            </div>
+            <div>
+                <div>
+                    <label for="xiao" class="xiao"><img src="./img/imgCode.jpg" alt=""></label>
+                    <input type="text" placeholder="请输入图片效证码" class="yzm" id="xiao">
+                </div>
+                <span></span>
+            </div>
+            <div>
+                <div>
+                    <button type="button" class="code">获取验证码</button>
+                    <input type="text" placeholder="请输入4位数字验证码" class="telyzm" id="auth_code">
+                </div>
+                <span></span>
+            </div>
+            <div>
+                <input type="text" placeholder="请输入用户名" class="user">
+                <span></span>
+            </div>
+            <div>
+                <input type="password" placeholder="请输入新密码" class="pwd">
+                <span></span>
+            </div>
+            <div>
+                <input type="password" placeholder="确定新密码" class="pwds">
+                <span></span>
+            </div>
 
+            <button id="btn">立即注册</button>
+        </form>
+    </div>
 
 
 
@@ -88,7 +127,7 @@
             </div>
             <div>
                 <h2><a href="#">厂商合作</a></h2>
-                <p><a href="#">关于极果</a></p>
+                <p><a href="./about.html">关于极果</a></p>
                 <p><a href="#">联系我们</a></p>
                 <p><a href="#">商务合作：BD@jiguo.com</a></p>
                 <p><a href="#">CEO邮箱：CEO@jiguo.com</a></p>
@@ -102,4 +141,7 @@
         </div>
     </footer>
 </body>
+<script src="./js/jquery-3.5.1.min.js"></script>
+<script src="./js/regist.js"></script>
+
 </html>
