@@ -9,7 +9,7 @@ $(function () {
             success: function (data) {
               var innerT = doT.template($('#list1').text());
               $('#list').html(innerT(data[2]));
-              console.log(data) 
+             
             }
           });
         $.ajax({
@@ -19,7 +19,7 @@ $(function () {
             success: function (data) {
               var innerT = doT.template($('#list3').text());
               $('#list2').html(innerT(data[0]));
-              console.log(data) 
+               
             }
           });
    

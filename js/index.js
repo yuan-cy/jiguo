@@ -4,7 +4,7 @@ $(function () {
     let timer = null;
     function auto() {
       let dtime = new Date();
-      let xtime = new Date(2020, 11, 17, 16, 24);
+      let xtime = new Date(2020, 11, 19, 16, 24);
       let w = xtime.getTime() - dtime.getTime();
       if (w >= 0) {
         let d = parseInt(w / 1000 / 60 / 60 / 24);
@@ -52,7 +52,7 @@ $(function () {
     },function(){
       $(this).css('border','');
     })
-    // 报告精选 
+    //报告精选 
     $.ajax({
       url: 'http://192.168.1.94:3000/play/hot',
       type: 'get',
@@ -60,22 +60,11 @@ $(function () {
       success: function (data) {
         var innerT = doT.template($('#list1').text());
         $('#list').html(innerT(data[2]));
-        console.log(data)
+        // console.log(data)
        
       }
      
     });
-    $('.list').on('click','li>div>.spans',function(){
-      var nn = $(this).html()
-      if( $(this).hasClass('ss')){
-        $(this).removeClass('ss').html(++nn);
-      }else{
-        $(this).addClass('ss').html(--nn);
-      }
-     
-  
-     
-      })
     // 导购精选
     $.ajax({
       url: 'http://192.168.1.94:3000/play/new',
@@ -96,29 +85,7 @@ $(function () {
         $('#list-l').html(innerT(data[3]));
       }
     });
-    // 隐藏部分
-    $.ajax({
-      url: 'http://192.168.1.94:3000/play/new',
-      type: 'get',
-      dataType: "json",
-      success: function (data) {
-        var innerT = doT.template($('#list_lt2').text());
-        $('#list-l2').html(innerT(data[3]));
-      }
-    });
-    // 点击加载更多
-    $('.load').click(function () {
-      if ($(this).hasClass('load2')) {
-        $('.load').removeClass('load2');
-      } else {
-        $('.load').addClass('load2').text('正在加载');
-      }
-      setTimeout(function () {
-        $('.load').removeClass('load2').text('点击加载更多');
-          $('.hide').slideDown();
-      }, 2000);
-     
-    });
+
     // 登录显示隐藏
     $('.bumit').on('click',function(){
       $('.for').slideDown();

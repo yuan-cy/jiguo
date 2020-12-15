@@ -53,6 +53,10 @@
         <ul id="list">
 
         </ul>
+        <div class="all_3 hide"  hidden>
+            <ul id="list-l2" class="list">
+            </ul>
+        </div>
         <div class="load">点击加载更多</div>
     </div>
     <script id="list1" type="text/x-dot-template">
@@ -75,6 +79,7 @@
         </ul>
         <div class="load">点击加载更多</div>
     </div>
+
     <script id="list3" type="text/x-dot-template">
         {{~it:value:index}}
     <li>
@@ -88,6 +93,18 @@
     </li>
     {{~}}
    </script>
+   <script id="list_lt3" type="text/x-dot-template">
+    {{~it:value:index}}
+<li>
+    <img src="{{=value.img}}" alt="">
+    <h4>{{=value.text}}</h4>
+    <div>{{=value.price}}</div>
+    <div><span class='spans ss'>{{=value.like}}</span> <span>{{=value.words}}</span></div>
+    <div></div>
+</li>
+
+{{~}}
+</script>
     <!-- 品类的内容 -->
     <ul class="ul_u content" hidden>
 

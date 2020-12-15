@@ -71,6 +71,63 @@ header {
 .box .rig .zc a {
   color: #fe5341;
 }
+.all_3 {
+  width: 1000px;
+  margin: 0 auto;
+}
+.all_3 .list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.all_3 .list li {
+  width: 210px;
+  height: 260px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 20px;
+}
+.all_3 .list li img {
+  width: 210px;
+  height: 150px;
+  border-radius: 5px 5px 0px 0px;
+}
+.all_3 .list li h4 {
+  padding: 0px 2px;
+}
+.all_3 .list li div:nth-child(3) {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  color: red;
+}
+.all_3 .list li div:nth-child(4) {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  padding: 0px 2px;
+}
+.all_3 .list li div:nth-child(4) span:nth-child(1) {
+  background: url(../bgimgs/xin.png) no-repeat center center;
+  padding-left: 20px;
+}
+.all_3 .list li div:nth-child(4) span:nth-child(2) {
+  background: url(../bgimgs/reply.png) no-repeat center center;
+  padding-left: 20px;
+}
+li img:hover {
+  animation: op 2s linear infinite;
+}
+@keyframes op {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 footer {
   background-color: #505050;
   height: 360px;
