@@ -5,7 +5,7 @@ $(function() {
 
         function auto() {
             let dtime = new Date();
-            let xtime = new Date(2020, 11, 17, 16, 24);
+            let xtime = new Date(2020, 11, 19, 16, 24);
             let w = xtime.getTime() - dtime.getTime();
             if (w >= 0) {
                 let d = parseInt(w / 1000 / 60 / 60 / 24);
@@ -145,5 +145,4 @@ $(function() {
     })();
 
 
-
-})
+});
