@@ -1,5 +1,5 @@
-$(function() {
-    (function() {
+$(function () {
+    (function () {
         // 时间倒计时
         let timer = null;
 
@@ -41,108 +41,132 @@ $(function() {
         });
 
         //鼠标移入停止播放，鼠标离开  继续轮播
-        $('.swiper-slide').mouseenter(function() {
+        $('.swiper-slide').mouseenter(function () {
             swiper.autoplay.stop();
         });
-        $('.swiper-slide').mouseleave(function() {
+        $('.swiper-slide').mouseleave(function () {
             swiper.autoplay.start();
         });
-        $('.list').on('click', 'li>div>.spans', function() {
-                console.log(1111111)
-                $(this).css('border', 'red');
-            }, function() {
-                $(this).css('border', '');
-            })
-            // 报告精选 
+        $('.list').on('click', 'li>div>.spans', function () {
+            console.log(1111111)
+            $(this).css('border', 'red');
+        }, function () {
+            $(this).css('border', '');
+        })
+        // 报告精选 
         $.ajax({
-            url: 'http://192.168.1.94:3000/play/hot',
+            url: 'http://192.168.1.24:3000/play/hot',
             type: 'get',
             dataType: "json",
-            success: function(data) {
+            success: function (data) {
                 var innerT = doT.template($('#list1').text());
                 $('#list').html(innerT(data[2]));
-                console.log(data)
 
             }
 
         });
-        $('.list').on('click', 'li>div>.spans', function() {
-                var nn = $(this).html()
-                if ($(this).hasClass('ss')) {
-                    $(this).removeClass('ss').html(++nn);
-                } else {
-                    $(this).addClass('ss').html(--nn);
-                }
+        $('.list').on('click', 'li>div>.spans', function () {
+            var nn = $(this).html()
+            if ($(this).hasClass('ss')) {
+                $(this).removeClass('ss').html(++nn);
+            } else {
+                $(this).addClass('ss').html(--nn);
+            }
 
 
 
-            })
-            // 导购精选
+        })
+        // 导购精选
         $.ajax({
-            url: 'http://192.168.1.94:3000/play/new',
+            url: 'http://192.168.1.24:3000/play/new',
             type: 'get',
             dataType: "json",
-            success: function(data) {
+            success: function (data) {
                 var innerT = doT.template($('#list3').text());
                 $('#list2').html(innerT(data[1]));
             }
         });
         // 发现酷玩
         $.ajax({
-            url: 'http://192.168.1.94:3000/play/new',
+            url: 'http://192.168.1.24:3000/play/new',
             type: 'get',
             dataType: "json",
-            success: function(data) {
+            success: function (data) {
                 var innerT = doT.template($('#list_lt').text());
                 $('#list-l').html(innerT(data[3]));
             }
         });
         // 隐藏部分
         $.ajax({
-            url: 'http://192.168.1.94:3000/play/new',
+            url: 'http://192.168.1.24:3000/play/new',
             type: 'get',
             dataType: "json",
-            success: function(data) {
+            success: function (data) {
                 var innerT = doT.template($('#list_lt2').text());
                 $('#list-l2').html(innerT(data[3]));
             }
         });
         // 点击加载更多
-        $('.load').click(function() {
+        $('.load').click(function () {
             if ($(this).hasClass('load2')) {
                 $('.load').removeClass('load2');
             } else {
                 $('.load').addClass('load2').text('正在加载');
             }
-            setTimeout(function() {
+            setTimeout(function () {
                 $('.load').removeClass('load2').text('点击加载更多');
                 $('.hide').slideDown();
             }, 2000);
 
         });
         // 登录显示隐藏
-        $('.bumit').on('click', function() {
+        $('.bumit').on('click', function () {
             $('.for').slideDown();
         });
-        $('.tui').on('click', function() {
+        $('.tui').on('click', function () {
             $(this).parents('.for').slideUp();
         });
         // 登录
-        $('.for').on('submit', function() {
+        $('.for').on('submit', function () {
             $.ajax({
-                url: ' http://192.168.1.94:3000/users/login',
+                url: ' http://192.168.1.24:3000/users/login',
                 type: 'post',
                 data: {
                     username: $('#poh').val(),
                     password: $('#pas').val()
                 },
-                success: function(res) {
+                success: function (res) {
                     alert(res.msg);
-                    $('.for').slideUp();
+                    // if($('.chd:checked')){
+                    //     localStorage.setItem($('#poh').val());
+                    //     localStorage.setItem($('#pas').val());
+                    //     localStorage.setItem($('.chd').prop('checked'));
+                    // }else{
+                    //     localStorage.clear()
+                    // }
+                    if (res.msg == '登录成功') {
+                        $('.for').slideUp();
+                    }
+                    if ($('.chd').is(':checked')) {
+                        localStorage.setItem('user', $('#poh').val());
+                        localStorage.setItem('pass', $('#pas').val());
+                        localStorage.setItem('ch', $('.chd').is(':checked'));
+                    } else {
+                        localStorage.clear();
+                    }
+                    if (localStorage.getItem('ch')) {
+                        $('#poh').val(localStorage.getItem('user'));
+                        $('#pas').val(localStorage.getItem('pass'));
+                        $('.chd').attr('checked', localStorage.getItem('ch'))
+                    }
+
                 }
             });
-        });
-    })();
 
+
+
+        });
+     
+    })();
 
 });

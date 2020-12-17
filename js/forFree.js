@@ -1,7 +1,7 @@
 $(function() {
     (function() {
         $.ajax({
-            url: 'http://192.168.1.94:3000/guid/new',
+            url: 'http://192.168.1.24:3000/guid/new',
             type: 'get',
             dataType: "json",
             success: function(data) {
@@ -11,7 +11,7 @@ $(function() {
         });
 
         $.ajax({
-            url: 'http://192.168.1.94:3000/guid/hot',
+            url: 'http://192.168.1.24:3000/guid/hot',
             type: 'get',
             dataType: "json",
             success: function(data) {

@@ -14,7 +14,7 @@ $(function(){
     });
     $('.yzm').blur(function(){
         var yzm = 'r2b7'
-        console.log(11111)
+        // console.log(11111)
         if($(this).val()!= yzm ){
             $(this).parent().next().css('color','red').text('请输入验证码');
         }else{
@@ -66,10 +66,10 @@ $(function(){
         }
             
         $.ajax({
-            url:' http://192.168.1.94:3000/users/register',
+            url:' http://192.168.1.24:3000/users/register',
             type:'post',
             data:{
-                phone: $('.tel').val(),
+                phone:$('.tel').val(),
                 code:$('.yzm').val(),
                 username: $('.user').val(),
                 password: $('.pwds').val()
@@ -77,7 +77,8 @@ $(function(){
             success:function(res){
                 alert(res.msg);
                 if(res.msg=='注册成功'){
-                    window.location = '/学习Web/练习/qy128/jiguo/index.html'
+                    // location = '/学习Web/练习/qy128/jiguo/index.html';
+                    location = 'index.html';
                 }
               
             }

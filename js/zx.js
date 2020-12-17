@@ -3,7 +3,7 @@ $(function () {
      
 
         $.ajax({
-            url: 'http://192.168.1.94:3000/play/hot',
+            url: 'http://192.168.1.24:3000/play/hot',
             type: 'get',
             dataType: "json",
             success: function (data) {
@@ -13,7 +13,7 @@ $(function () {
             }
           });
         $.ajax({
-            url: 'http://192.168.1.94:3000/play/new',
+            url: 'http://192.168.1.24:3000/play/new',
             type: 'get',
             dataType: "json",
             success: function (data) {
