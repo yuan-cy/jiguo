@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+.div {
+  width: 100%;
+  background-color: #F7F7F7;
+}
+.div .main {
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.div .main .aside-top-p {
+  color: #999999;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.div .main aside {
+  width: 690px;
+  height: auto;
+  float: left;
+}
+.div .main aside .aside-title {
+  width: 100%;
+  height: 125px;
+  padding: 25px;
+  background-color: white;
+  margin-bottom: 1px;
+  border-radius: 10px 10px 0 0;
+}
+.div .main aside .aside-title p {
+  padding-left: 15px;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  color: #cccccc;
+  margin-top: 10px;
+}
+.div .main aside .aside-title p img {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  margin-right: 3px;
+}
+.div .main aside .aside-title p span {
+  float: right;
+}
+.div .main aside .aside-main {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 15px 25px;
+}
+.div .main aside .aside-main p {
+  margin: 15px 1px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #332330;
+}
+.div .main aside .aside-main h3 {
+  text-align: center;
+  font-weight: 500;
+}
+.div .main aside .aside-main .mar {
+  margin: 6px 0;
+}
+.div .main aside .aside-main .a {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.div .main aside .aside-main .a b {
+  color: #ABABAA;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 400;
+}
+.div .main aside .aside-main .a b:hover {
+  text-decoration: underline;
+}
+.div .main article {
+  width: 250px;
+  height: 100px;
+  float: right;
+}
+.div .main article .article {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: white;
+}
+.div .main article .article .left {
+  width: 125px;
+  height: 100px;
+  float: left;
+  padding: 25px;
+  text-align: center;
+  border-right: 1px solid #cccccc;
+}
+.div .main article .article .left .left-img {
+  display: block;
+  cursor: pointer;
+}
+.div .main article .article .left .left-img1 {
+  display: none;
+  cursor: pointer;
+}
+.div .main article .article .left p {
+  margin-top: 2px;
+  text-align: center;
+  cursor: default;
+}
+.div .main article .article .right {
+  width: 125px;
+  height: 100px;
+  float: left;
+  padding: 27px;
+  text-align: center;
+}
+.div .main article .article .right .right-img {
+  display: block;
+  cursor: pointer;
+}
+.div .main article .article .right .right-img1 {
+  display: none;
+  cursor: pointer;
+  position: relative;
+}
+.div .main article .article .right .right-img1 .bshare-custom {
+  width: 50px;
+  position: absolute;
+  top: -22px;
+  left: 15px;
+}
+.div .main article .article .right p {
+  margin-top: 3px;
+  text-align: center;
+  cursor: default;
+}

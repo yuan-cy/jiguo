@@ -1,0 +1,108 @@
+.ku {
+  width: 130px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.ul_l {
+  width: 392px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.ul_l li {
+  float: left;
+  margin-left: 63px;
+  font-size: 16px;
+  color: #a9abaa;
+  width: 50px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.ul_l li a {
+  color: #000;
+}
+.ul_l .list {
+  border-bottom: 2px solid red;
+}
+.dg {
+  width: 100%;
+  margin-top: 30px;
+  background-color: #f3f3f3;
+}
+.dg .all_3 {
+  width: 1000px;
+  margin: 0 auto;
+}
+.dg .all_3 .list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.dg .all_3 .list li {
+  width: 210px;
+  height: 260px;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 5px 10px;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.dg .all_3 .list li div:nth-child(5) {
+  background: url(../bgimgs/listbg.jpg) no-repeat;
+  width: 210px;
+  height: 21px;
+  position: absolute;
+  bottom: -17px;
+}
+.dg .all_3 .list li img {
+  width: 210px;
+  height: 150px;
+  border-radius: 5px 5px 0px 0px;
+}
+.dg .all_3 .list li h4 {
+  padding: 0px 2px;
+}
+.dg .all_3 .list li div:nth-child(3) {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  color: red;
+}
+.dg .all_3 .list li div:nth-child(4) {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.dg .all_3 .list li div:nth-child(4) span:nth-child(1) {
+  background: url(../bgimgs/xin.png) no-repeat center center;
+  padding-left: 20px;
+}
+.dg .all_3 .list li div:nth-child(4) span:nth-child(2) {
+  background: url(../bgimgs/reply.png) no-repeat center center;
+  padding-left: 20px;
+}
+.dg .load {
+  width: 100px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: red;
+  padding-left: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background: url(../bgimgs/more.png) no-repeat 0px 7px;
+  cursor: pointer;
+}
+.dg .load2 {
+  width: 100px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: red;
+  padding-left: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background: url(../bgimgs/loading-icon.gif) no-repeat;
+}
+#list2 li h4 a {
+  color: black;
+}

@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>首页</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/index.js"></script>
     <script src="./js/public.js"></script>
-    
+    <script src="./js/doT.min.js"></script>
 </head>
+
 <body>
-      <!-- 导航栏 -->
-      <header>
+    <!-- 导航栏 -->
+    <header>
         <div class="box">
             <img src="./img/logonew.png" class="jg">
             <ul class="ul_">
-                <li><a href="">首页</a>
-                <li>
-                <li><a href="">酷玩</a>
-                <li>
-                <li><a href="">导购</a>
-                <li>
-                <li><a href="">试用</a>
-                <li>
-                <li><a href="">报告</a>
-                <li>
+                <li><a href="#" class="red">首页</a>
+                </li>
+                <li><a href="./play/zx.html">酷玩</a>
+                </li>
+                <li><a href="./guid/new.html">导购</a>
+                </li>
+                <li><a href="./use/forFree.html">试用</a>
+                </li>
+                <li><a href="./medical.html">报告</a>
+                </li>
             </ul>
             <div class="rig">
                 <div class="ims"><img src="./bgimgs/search.png" class="fdj"></div>
@@ -35,7 +39,328 @@
             </div>
         </div>
     </header>
+    <!-- 背景图 -->
+    <div class="image-bg">
+        <div class="image-c">
+            <div class="count">
+                <div class="sound">幻响小贝HiFi2.1音箱</div>
+                <div class="spa">
+                    <span class="span1">126人申请</span>
+                    <span class="span2">￥599</span>
+                    <span class="span3">20台</span>
+                </div>
+                <div class="sj">申请时间剩余: <span id="span"></span></div>
+                <button class="but">立即申请<tton>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="lb">
+        <div class="hot">
+            <h1>热门分类</h1>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/hot9.jpg">
+                    <p><a href="#">首发</a></p>
+                    <div class="bt">
+                        <p>巴慕达the Toaster烤面包</p>
+                        <p>机</p>
+                        <div>
+                            <div>2032</div>
+                            <div>20台</div>
+                        </div>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/hot9.jpg">
+                    <p><a href="#">首发</a></p>
+                    <div class="bt">
+                        <p>巴慕达the Toaster烤面包</p>
+                        <p>机</p>
+                        <div>
+                            <div>2032</div>
+                            <div>20台</div>
+                        </div>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/hot11.jpg">
+                    <p><a href="#">首发</a></p>
+                    <div class="bt">
+                        <p>液体图像338运动摄</p>
+                        <p>像眼镜</p>
+                        <div>
+                            <div>2032</div>
+                            <div>20台</div>
+                        </div>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/hot10.jpg">
+                    <p><a href="#">首发</a></p>
+                    <div class="bt">
+                        <p>奥斯弗里小鹰户外运动专业腰</p>
+                        <p>包</p>
+                        <div>
+                            <div style="border: 1px solid green ;color: green;">2032</div>
+                            <div style="border: 1px solid green ;color: green;">20台</div>
+                        </div>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
 
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/hot9.jpg">
+                    <p><a href="#">首发</a></p>
+                    <div class="bt">
+                        <p>巴慕达the Toaster烤面包</p>
+                        <p>机</p>
+                        <div>
+                            <div>2032</div>
+                            <div>20台</div>
+                        </div>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/hot9.jpg">
+                    <p><a href="#">首发</a></p>
+                    <div class="bt">
+                        <p>巴慕达the Toaster烤面包</p>
+                        <p>机</p>
+                        <div>
+                            <div>2032</div>
+                            <div>20台</div>
+                        </div>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/hot9.jpg">
+                    <p><a href="#">首发</a></p>
+                    <div class="bt">
+                        <p>巴慕达the Toaster烤面包</p>
+                        <p>机</p>
+                        <div>
+                            <div>2032</div>
+                            <div>20台</div>
+                        </div>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/hot9.jpg">
+                    <p><a href="#">首发</a></p>
+                    <div class="bt">
+                        <p>巴慕达the Toaster烤面包</p>
+                        <p>机</p>
+                        <div>
+                            <div>2032</div>
+                            <div>20台</div>
+                        </div>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/hot11.jpg">
+                    <p><a href="#">首发</a></p>
+                    <div class="bt">
+                        <p>液体图像338运动摄</p>
+                        <p>像眼镜</p>
+                        <div>
+                            <div>2032</div>
+                            <div>20台</div>
+                        </div>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/hot10.jpg">
+                    <p><a href="#">首发</a></p>
+                    <div class="bt">
+                        <p>奥斯弗里小鹰户外运动专业腰</p>
+                        <p>包</p>
+                        <div>
+                            <div style="border: 1px solid green ;color: green;">2032</div>
+                            <div style="border: 1px solid green ;color: green;">20台</div>
+                        </div>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/hot9.jpg">
+                    <p><a href="#">首发</a></p>
+                    <div class="bt">
+                        <p>巴慕达the Toaster烤面包</p>
+                        <p>机</p>
+                        <div>
+                            <div>2032</div>
+                            <div>20台</div>
+                        </div>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/hot9.jpg">
+                    <p><a href="#">首发</a></p>
+                    <div class="bt">
+                        <p>巴慕达the Toaster烤面包</p>
+                        <p>机</p>
+                        <div>
+                            <div>2032</div>
+                            <div>20台</div>
+                        </div>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </div>
+    <!-- 报告精选 -->
+    <div class="all_1">
+        <div class="all_2">
+            <h1>报告精选</h1>
+            <div class="r"><a href="#">查看更多</a></div>
+        </div>
+        <div class="all_3">
+            <ul id="list" class="list">
+            </ul>
+        </div>
+    </div>
+    <script id="list1" type="text/x-dot-template">
+        {{~it:value:index}}
+    <li>
+        <img src="{{=value.img}}" alt="">
+        <h4>{{=value.text}}</h4>
+        <div>{{=value.price}}</div>
+        <div>
+            <span class='spans ss'>{{=value.like}}</span>
+             <span>{{=value.words}}</span>
+      </div>
+    </li>
+    {{~}}
+   </script>
+    <!-- 导购精选 -->
+    <div class="dg">
+        <div class="dg-h">
+            <h1>导购精选</h1>
+            <div class="r"><a href="#">查看更多</a></div>
+        </div>
+        <div class="all_3">
+            <ul id="list2" class="list">
+            </ul>
+        </div>
+    </div>
+    <script id="list3" type="text/x-dot-template">
+        {{~it:value:index}}
+        {{?index<4}}  
+    <li>
+        <img src="{{=value.img}}" alt="">
+        <h4>{{=value.text}}</h4>
+        <div>{{=value.price}}</div>
+        <div><span class='spans ss'>{{=value.like}}</span> <span>{{=value.words}}</span></div>
+        <div></div>
+    </li>
+    {{?}}
+    {{~}}
+   </script>
+    <!-- 发现酷玩 -->
+    <div class="f_play">
+        <div class="f-dg">
+            <h1>发现酷玩</h1>
+            <div class="r"><a href="#">查看更多</a></div>
+        </div>
+        <div class="all_3">
+            <ul id="list-l" class="list">
+            </ul>
+        </div>
+        <div class="all_3 hide"  hidden>
+            <ul id="list-l2" class="list">
+            </ul>
+        </div>
+        <div class="load">点击加载更多</div>
+       
+    </div>
+    <script id="list_lt" type="text/x-dot-template">
+        {{~it:value:index}}
+    <li>
+        <img src="{{=value.img}}" alt="">
+        <h4>{{=value.text}}</h4>
+        <div>{{=value.price}}</div>
+        <div><span class='spans ss'>{{=value.like}}</span> <span>{{=value.words}}</span></div>
+        <div></div>
+    </li>
+    <li>
+        <img src="{{=value.img}}" alt="">
+        <h4>{{=value.text}}</h4>
+        <div>{{=value.price}}</div>
+        <div><span class='spans ss'>{{=value.like}}</span> <span>{{=value.words}}</span></div>
+        <div></div>
+    </li>
+    {{~}}
+   </script>
+    <script id="list_lt3" type="text/x-dot-template">
+        {{~it:value:index}}
+    <li>
+        <img src="{{=value.img}}" alt="">
+        <h4>{{=value.text}}</h4>
+        <div>{{=value.price}}</div>
+        <div><span class='spans ss'>{{=value.like}}</span> <span>{{=value.words}}</span></div>
+        <div></div>
+    </li>
+  
+    {{~}}
+   </script>
+    <!-- 登录页面 -->
+    <form action="#" class="for">
+        <div class="jig">极果账号登录</div>
+        <div class="pohe">
+            <input type="text" placeholder="手机号" id="poh">
+        </div>
+
+
+        <div class="pass">
+            <input type="password" placeholder="密码" id="pas">
+        </div>
+
+        <div class="bmit">
+            <input type="checkbox" class="chd" ><span>下次自动登录</span>
+            <button id="btn">登录<tton>
+        </div>
+        <p>
+            <a href="">注册新账号</a>
+            <a href="" class="papa">忘记密码？</a>
+        </p>
+
+        <div class="code">
+            <p>社交网络账号登录</p>
+            <img src="./img/code.png" alt="">
+            <p class="tui">x</p>
+        </div>
+
+    </form>
     <!-- 底部 -->
     <footer>
         <div class="foot">
@@ -88,7 +413,7 @@
             </div>
             <div>
                 <h2><a href="#">厂商合作</a></h2>
-                <p><a href="#">关于极果</a></p>
+                <p><a href="./about.html">关于极果</a></p>
                 <p><a href="#">联系我们</a></p>
                 <p><a href="#">商务合作：BD@jiguo.com</a></p>
                 <p><a href="#">CEO邮箱：CEO@jiguo.com</a></p>
@@ -101,6 +426,16 @@
             <div>&copy; 2016极果版权所有</div>
         </div>
     </footer>
+<!-- 隐藏动画-->
+<div class="h_" hidden>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bear"></div>
+    <div class="clear">x</div>
+</div>
 </body>
+<script src="./js/jquery-3.5.1.min.js"></script>
+<script src="./js/public.js"></script>
 
 </html>
+<script src="./js/swiper-bundle.min.js"></script>

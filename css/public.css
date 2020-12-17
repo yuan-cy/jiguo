@@ -26,6 +26,9 @@ header {
   float: left;
   margin-right: 50px;
 }
+.box .ul_ li .red {
+  color: red;
+}
 .box .ul_ li > a {
   font-size: 14px;
   color: #000;
@@ -70,6 +73,63 @@ header {
 }
 .box .rig .zc a {
   color: #fe5341;
+}
+.all_3 {
+  width: 1000px;
+  margin: 0 auto;
+}
+.all_3 .list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.all_3 .list li {
+  width: 210px;
+  height: 260px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 20px;
+}
+.all_3 .list li img {
+  width: 210px;
+  height: 150px;
+  border-radius: 5px 5px 0px 0px;
+}
+.all_3 .list li h4 {
+  padding: 0px 2px;
+}
+.all_3 .list li div:nth-child(3) {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  color: red;
+}
+.all_3 .list li div:nth-child(4) {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  padding: 0px 2px;
+}
+.all_3 .list li div:nth-child(4) span:nth-child(1) {
+  background: url(../bgimgs/xin.png) no-repeat center center;
+  padding-left: 20px;
+}
+.all_3 .list li div:nth-child(4) span:nth-child(2) {
+  background: url(../bgimgs/reply.png) no-repeat center center;
+  padding-left: 20px;
+}
+li img:hover {
+  animation: op 2s linear infinite;
+}
+@keyframes op {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 footer {
   background-color: #505050;
@@ -202,24 +262,94 @@ footer .shang {
   margin-top: 10px;
   text-align: center;
 }
-footer .shang #sh:hover {
-  background-color: grey;
+footer .shang > div:nth-child(2) {
+  margin-top: 70px;
+  color: grey;
 }
-footer .shang > div:nth-child(1) {
-  float: right;
+#sh {
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
   width: 50px;
   height: 52px;
-  background: #e8e8e8;
-  position: relative;
+  line-height: 52px;
+  text-align: center;
+  background: grey;
   border-radius: 7px;
+  display: none;
 }
-footer .shang > div:nth-child(1) img {
+#sh:hover {
+  background-color: #474646;
+}
+/* 隐藏动画 */
+.h_ {
+  width: 1000px;
+  height: 500px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 10px;
+  box-shadow: 3px 7px 2px #ccc;
+  background-color: #ccc;
 }
-footer .shang > div:nth-child(2) {
-  margin-top: 70px;
-  color: grey;
+.h_ .bg1,
+.h_ .bg2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  animation: bgMove 5s linear infinite;
+}
+.h_ .bg1 {
+  background: url('../image/bg1.png') repeat-x;
+}
+.h_ .bg2 {
+  background: url('../image/bg2.png') repeat-x;
+}
+.h_ .bear {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  background: url('../image/bear.png');
+  animation: run 0.5s steps(8) infinite, t 1s linear forwards;
+}
+.h_ .clear {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+@keyframes bgMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -3840px 0;
+  }
+}
+@keyframes run {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1600px 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+@keyframes t {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 50%;
+    transform: translate(-50%);
+  }
 }

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导购</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/new.css">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/new.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../js/doT.min.js"></script>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="box">
+            <img src="../img/logonew.png" class="jg">
+            <ul class="ul_">
+                <li><a href="../index.html">首页</a>
+                </li>
+                <li><a href="../play/zx.html">酷玩</a>
+                </li>
+                <li><a href="#" class="red">导购</a>
+                </li>
+                <li><a href="../use/forFree.html">试用</a>
+                </li>
+                <li><a href="../medical.html">报告</a>
+                </li>
+            </ul>
+
+            <div class="rig">
+                <div class="ims"><img src="../bgimgs/search.png" class="fdj"></div>
+                <!-- <div class="bumit">登录</div> -->
+                <div class="zc"><a href="../regist.html">注册</a></div>
+            </div>
+        </div>
+    </header>
+    <!-- 发现酷玩 -->
+    <h1 class="ku">导购清单</h1>
+
+    <!-- 最新  最热   品类 -->
+    <ul class="ul_l">
+        <li class="list"><a href="#">最新</a> </li>
+        <li><a href="#">最热</a> </li>
+    </ul>
+    <div class="dg content">
+
+        <div class="all_3">
+            <ul id="list2" class="list">
+            </ul>
+        </div>
+        <div class="load">点击加载更多</div>
+    </div>
+    <script id="list3" type="text/x-dot-template">
+        {{~it:value:index}} {{?index
+        <8}} <li>
+            <img src="{{=value.img}}" alt="">
+            <h4><a href="../thepen.html">{{=value.text}}</a></h4>
+            <div></div>
+            <div><span class='spans ss'>{{=value.like}}</span> <span>{{=value.words}}</span></div>
+            <div></div>
+            </li>
+            {{?}} {{~}} {{~it:value:index}} {{?index
+            <4}} <li>
+                <img src="{{=value.img}}" alt="">
+                <h4>{{=value.text}}</h4>
+                <div></div>
+                <div><span class='spans ss'>{{=value.like}}</span> <span>{{=value.words}}</span></div>
+                <div></div>
+                </li>
+                {{?}} {{~}}
+    </script>
+    <div class="dg content" hidden>
+
+        <div class="all_3">
+            <ul id="list5" class="list">
+            </ul>
+        </div>
+        <div class="load">点击加载更多</div>
+    </div>
+
+    <script id="list4" type="text/x-dot-template">
+        {{~it:value:index}} {{?index
+        <8}} <li>
+            <img src="{{=value.img}}" alt="">
+            <h4>{{=value.text}}</h4>
+            <div></div>
+            <div><span class='spans ss'>{{=value.like}}</span> <span>{{=value.words}}</span></div>
+            <div></div>
+            </li>
+            {{?}} {{~}} {{~it:value:index}} {{?index
+            <4}} <li>
+                <img src="{{=value.img}}" alt="">
+                <h4>{{=value.text}}</h4>
+                <div></div>
+                <div><span class='spans ss'>{{=value.like}}</span> <span>{{=value.words}}</span></div>
+                <div></div>
+                </li>
+                {{?}} {{~}}
+    </script>
+
+
+    <!-- 底部 -->
+    <footer>
+        <div class="foot">
+            <img src="../img/code.png">
+            <div>
+                <img src="../img/logoImg.jpg">
+                <p>
+                    <a href="#">全球酷玩成用导购平</a>
+                    <a href="#">金酷·新奇好玩·品质</a>
+                </p>
+                <p>
+                    <a href="#">微信添加"Jguolguo'</a>
+                    <a href="#">鼓取我们的服务。</a>
+                </p>
+            </div>
+            <div>
+                <h2><a href="#">免费试用</a></h2>
+                <p> <a href="#">试用流翟</a></p>
+                <p><a href="#">如何提高成中率</a></p>
+            </div>
+            <div>
+                <h2><a href="">友情链接</a></h2>
+                <div>
+                    <p><a href="#">智东西</a></p>
+                    <p><a href="#">楗IT </a></p>
+                    <p><a href="#">搜狐数码</a></p>
+                    <p><a href="#">凤凰数码</a></p>
+                    <p><a href="#">泡跑网</a></p>
+                    <p><a href="#">Zuk社区</a></p>
+                    <p><a href="#">极客公园</a></p>
+                    <p><a href="#">果库</a></p>
+                </div>
+                <div>
+                    <p><a href="#">WEIBUSI</a></p>
+                    <p><a href="#">腾讯科技</a></p>
+                    <p><a href="#">凤凰科技</a></p>
+                    <p><a href="#">PConline</a></p>
+                    <p><a href="#">3W咖啡</a></p>
+                    <p><a href="#">亿觅Emie</a></p>
+                    <p><a href="#">易迅易启玩</a></p>
+                </div>
+            </div>
+            <div>
+                <h2><a href="#">购买攻略</a></h2>
+                <p><a href="#">美亚海淘教程</a></p>
+                <p><a href="#">日亚海淘教程</a></p>
+                <p><a href="#">海淘转运攻略</a></p>
+                <p><a href="#">Kickstarter众筹购买攻略</a></p>
+                <p><a href="#">indiegogo众筹购买攻略</a></p>
+            </div>
+            <div>
+                <h2><a href="#">厂商合作</a></h2>
+                <p><a href="../about.html">关于极果</a></p>
+                <p><a href="#">联系我们</a></p>
+                <p><a href="#">商务合作：BD@jiguo.com</a></p>
+                <p><a href="#">CEO邮箱：CEO@jiguo.com</a></p>
+            </div>
+
+        </div>
+        <div class="shang">
+            <div id="sh"><img src="../bgimgs/back.png"></div>
+            <div>&copy; 2016极果版权所有</div>
+        </div>
+    </footer>
+</body>
+
+</html>
